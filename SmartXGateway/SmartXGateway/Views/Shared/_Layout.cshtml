@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Smart-X Gateway</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg smartx-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">🛰️ Smart-X Gateway</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-module="Sensors" asp-controller="Sensors" asp-action="Index">📡 Sensor Ingestion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-module="CommandStream" asp-controller="CommandStream" asp-action="Index">⚡ Command Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-module="Topology" asp-controller="Topology" asp-action="Index">🕸️ Network Topology</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link">👤 @User.Identity!.Name</span>
+                        </li>
+                        <li class="nav-item">
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-link nav-link">Logout</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Register">Register</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="modal fade" id="globalSuccessModal" tabindex="-1" aria-labelledby="globalSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="globalSuccessModalLabel">Information Saved Successfully</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="globalSuccessModalMessage">
+                    Your information was saved successfully.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="smartx-footer">
+        <div class="container">
+            &copy; @DateTime.UtcNow.Year — Smart-X IoT Mesh Ecosystem — PROG7312 Parts 1, 2 &amp; 3
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+
+    <!-- ✅ FIX: Added jQuery so the _ValidationScriptsPartial works -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="~/js/nav-state.js" asp-append-version="true"></script>
+    <script>
+        window.showSuccessModal = function (message) {
+            const messageElement = document.getElementById('globalSuccessModalMessage');
+            const modalElement = document.getElementById('globalSuccessModal');
+            if (!messageElement || !modalElement || !window.bootstrap) return;
+            messageElement.textContent = message || 'Your information was saved successfully.';
+            bootstrap.Modal.getOrCreateInstance(modalElement).show();
+        };
+    </script>
+    @if (TempData["SuccessMessage"] is string successMessage)
+    {
+        <script>
+            window.showSuccessModal(@Html.Raw(System.Text.Json.JsonSerializer.Serialize(successMessage)));
+        </script>
+    }
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

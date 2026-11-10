@@ -1,0 +1,57 @@
+﻿@model SmartXGateway.Models.SensorRegistrationViewModel
+@{
+    ViewData["Title"] = "Register Sensor";
+}
+
+<h2>📝 Register a New Sensor</h2>
+
+<div class="card smartx-card-pastel-green">
+    <div class="card-body">
+        <form asp-action="Register" method="post" enctype="multipart/form-data" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="col-md-6">
+                <label asp-for="MacAddress" class="form-label"></label>
+                <input asp-for="MacAddress" class="form-control" placeholder="AA:BB:CC:DD:EE:FF" />
+                <span asp-validation-for="MacAddress" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Location" class="form-label"></label>
+                <input asp-for="Location" class="form-control" placeholder="Sub-Zone B -> Zone 1 -> Facility A" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Category" class="form-label"></label>
+                <select asp-for="Category"
+                        asp-items="Html.GetEnumSelectList<SmartXGateway.Models.SensorCategory>()"
+                        class="form-select"></select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Attachment" class="form-label"></label>
+                <input asp-for="Attachment" type="file" class="form-control" />
+                <span asp-validation-for="Attachment" class="text-danger"></span>
+                <small class="text-muted">Files are AES-256 encrypted before being stored.</small>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn smartx-btn-primary">Register</button>
+                <a asp-action="Index" class="btn smartx-btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

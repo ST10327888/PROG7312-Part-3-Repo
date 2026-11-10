@@ -1,0 +1,48 @@
+﻿@model SmartXGateway.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card smartx-card-pastel-blue">
+            <div class="card-body">
+                <h3 class="card-title mb-3">🔐 Login</h3>
+                <form asp-action="Login" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input asp-for="RememberMe" class="form-check-input" />
+                        <label asp-for="RememberMe" class="form-check-label"></label>
+                    </div>
+                    <button type="submit" class="btn smartx-btn-primary w-100">Login</button>
+                    <p class="mt-3 mb-0 text-center">
+                        No account? <a asp-action="Register">Register here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

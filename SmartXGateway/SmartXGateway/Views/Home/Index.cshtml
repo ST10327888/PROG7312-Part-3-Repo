@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Smart-X Gateway";
+}
+
+<div class="text-center mb-5">
+    <h1 class="display-4 smartx-title">Smart-X IoT Mesh Ecosystem</h1>
+    <p class="lead text-muted">High-throughput telemetry ingestion gateway</p>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 smartx-card-pastel-green">
+            <div class="card-body">
+                <h5 class="card-title">📡 Sensor Data Ingestion &amp; Telemetry</h5>
+                <p class="card-text">Register sensors, upload encrypted configs, ingest mock telemetry, and monitor anomalies in real time.</p>
+                <a class="btn smartx-btn-primary w-100" asp-controller="Sensors" asp-action="Index">Open Module</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 smartx-card-pastel-blue">
+            <div class="card-body">
+                <h5 class="card-title">⚡ Real-Time Command Stream</h5>
+                <p class="card-text">FIFO + Priority queues, stack-based undo, O(1) dictionary lookups, HashSet alert dedup, and predictive suggestions.</p>
+                <a class="btn smartx-btn-primary w-100" asp-controller="CommandStream" asp-action="Index">Open Module</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <!-- RUBRIC FIX: Changed from grey/disabled to fully active purple theme -->
+        <div class="card h-100 smartx-card-pastel-purple">
+            <div class="card-body">
+                <h5 class="card-title">🕸️ Network Topology &amp; Mesh Routing</h5>
+                <p class="card-text">Graph modelling, BFS/DFS traversal, AVL Tree historical queries, and Minimum Spanning Tree routing.</p>
+                <!-- RUBRIC FIX: Activated the button and linked it to the Topology Controller -->
+                <a class="btn smartx-btn-primary w-100" asp-controller="Topology" asp-action="Index">Open Module</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

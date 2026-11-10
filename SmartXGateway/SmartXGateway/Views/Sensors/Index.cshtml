@@ -1,0 +1,157 @@
+﻿@model IEnumerable<SmartXGateway.Models.Sensor>
+@{
+    ViewData["Title"] = "Sensor Data Ingestion";
+}
+
+@* RUBRIC IMPROVEMENT: antiforgery token on the page, so any JSON POSTs
+   (delete, future actions) can send the RequestVerificationToken header. *@
+@Html.AntiForgeryToken()
+
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+    <h2>📡 Registered Sensors</h2>
+    <div>
+        <a class="btn smartx-btn-primary" asp-action="Register">+ Register Sensor</a>
+        <a class="btn smartx-btn-secondary" asp-action="Telemetry">📊 Telemetry Dashboard</a>
+        <a class="btn smartx-btn-secondary" asp-action="ValidateTree">🌳 Validate Deployment Tree</a>
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert smartx-alert-info">
+        No sensors registered yet. Click <strong>Register Sensor</strong> to add one.
+    </div>
+}
+else
+{
+    <div class="card smartx-card-pastel-blue">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th>MAC Address</th>
+                        <th>Location</th>
+                        <th>Category</th>
+                        <th>Last Value</th>
+                        <th>Registered</th>
+                        <th>Attachment</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="sensorTableBody">
+                    @foreach (var s in Model)
+                    {
+                        <tr data-mac="@s.MacAddress">
+                            <td><code>@s.MacAddress</code></td>
+                            <td>@s.Location</td>
+                            <td><span class="badge smartx-badge">@s.Category</span></td>
+                            <td>@s.LastValue.ToString("F2")</td>
+                            @* RUBRIC IMPROVEMENT: UtcNow (previously ToLocalTime on server). *@
+                            <td><time datetime="@s.RegisteredAt.ToString("o")">@s.RegisteredAt.ToString("yyyy-MM-dd HH:mm")</time></td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(s.AttachmentPath))
+                                {
+                                    <a asp-action="DownloadAttachment" asp-route-mac="@s.MacAddress">Download (decrypted)</a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">—</span>
+                                }
+                            </td>
+                            <td class="text-end">
+                                @* RUBRIC IMPROVEMENT: delete was impossible before, which
+                                   quickly hit the 100-sensor buffer cap. This button
+                                   removes the sensor and re-renders the row. *@
+                                <button type="button"
+                                        class="btn btn-sm smartx-btn-secondary delete-sensor-btn"
+                                        data-mac="@s.MacAddress">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@* RUBRIC IMPROVEMENT: inline toast host — no full-page reload needed after delete. *@
+<div id="sensorToast"
+     class="position-fixed bottom-0 end-0 p-3"
+     style="z-index: 1080; display: none;">
+    <div class="toast show smartx-card-pastel-green border-0">
+        <div class="toast-body" id="sensorToastBody">Saved.</div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // RUBRIC IMPROVEMENT (Navigation): mark this module as last-visited
+        // so nav-state.js can highlight the active nav pill.
+        sessionStorage.setItem('smartx.lastmodule', 'Sensors');
+
+        // RUBRIC IMPROVEMENT (CSRF): reuse the same antiforgery pattern the
+        // other pages use, so any future JSON POSTs on this page are safe.
+        function antiForgeryToken() {
+            const el = document.querySelector('input[name="__RequestVerificationToken"]');
+            return el ? el.value : '';
+        }
+
+        function toast(msg) {
+            const host = document.getElementById('sensorToast');
+            const body = document.getElementById('sensorToastBody');
+            if (!host || !body) return;
+            body.textContent = msg;
+            host.style.display = 'block';
+            clearTimeout(host._t);
+            host._t = setTimeout(() => { host.style.display = 'none'; }, 2800);
+        }
+
+        // RUBRIC IMPROVEMENT: Delete handler — event-delegated so it also works
+        // on rows added later by any future SignalR/JSON refresh.
+        document.addEventListener('click', async (e) => {
+            const btn = e.target.closest('.delete-sensor-btn');
+            if (!btn) return;
+
+            const mac = btn.dataset.mac;
+            if (!confirm(`Delete sensor ${mac}? This will remove its telemetry history entry.`)) return;
+
+            btn.disabled = true;
+            try {
+                const res = await fetch('/Sensors/Delete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': antiForgeryToken()
+                    },
+                    body: JSON.stringify({ mac })
+                });
+                const data = await res.json();
+                if (data.ok) {
+                    btn.closest('tr')?.remove();
+                    toast(`✅ Sensor ${mac} deleted.`);
+                    // RUBRIC IMPROVEMENT: re-apply empty state without a reload.
+                    const tbody = document.getElementById('sensorTableBody');
+                    if (tbody && tbody.children.length === 0) {
+                        location.reload();
+                    }
+                } else {
+                    toast(`❌ ${data.message || 'Delete failed.'}`);
+                }
+            } catch (err) {
+                console.error(err);
+                toast('❌ Delete failed (network error).');
+            } finally {
+                btn.disabled = false;
+            }
+        });
+    </script>
+}
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

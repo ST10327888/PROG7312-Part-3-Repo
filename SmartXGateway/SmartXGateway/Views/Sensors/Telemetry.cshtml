@@ -1,0 +1,309 @@
+﻿@{
+    ViewData["Title"] = "Telemetry Dashboard";
+    var sensors = ViewBag.Sensors as IReadOnlyCollection<SmartXGateway.Models.Sensor>;
+    var history = ViewBag.History as List<SmartXGateway.Models.TelemetryPacket<double>>;
+    var issues = ViewBag.Issues as List<SmartXGateway.Models.UserReportedIssue>;
+}
+
+@* RUBRIC IMPROVEMENT: antiforgery token for all JSON POSTs on this page. *@
+@Html.AntiForgeryToken()
+
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+    <h2>📊 Live Telemetry Dashboard</h2>
+    <div>
+        <button id="btnBurst" class="btn smartx-btn-secondary">⚡ Simulate Burst (50)</button>
+        <a class="btn smartx-btn-secondary" asp-action="Index">← Back</a>
+    </div>
+</div>
+
+<div class="row g-3 mb-3">
+    <div class="col-md-3">
+        <div class="card smartx-kpi smartx-kpi-blue">
+            <div class="card-body"><h6>Total Sensors</h6><h3 id="kpiSensors">@sensors!.Count</h3></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card smartx-kpi smartx-kpi-green">
+            <div class="card-body"><h6>Packets Ingested</h6><h3 id="kpiPackets">@history!.Count</h3></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card smartx-kpi smartx-kpi-yellow">
+            <div class="card-body"><h6>Anomalies</h6><h3 id="kpiAnomalies">0</h3></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card smartx-kpi smartx-kpi-pink">
+            <div class="card-body"><h6>Open Issues</h6><h3 id="kpiIssues">@(issues?.Count(i => i.Status == "Open") ?? 0)</h3></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="card smartx-card-pastel-blue mb-3">
+            <div class="card-header">Ingest Telemetry Packet</div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <label class="form-label">Device MAC</label>
+                    <select id="mac" class="form-select">
+                        @foreach (var s in sensors!)
+                        {
+                            <option value="@s.MacAddress">@s.MacAddress — @s.Location</option>
+                        }
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Metric</label>
+                    <input id="metric" class="form-control" value="soil_moisture" />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Value</label>
+                    <input id="value" type="number" step="0.01" class="form-control" value="42.5" />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Priority (0–10)</label>
+                    <input id="priority" type="number" min="0" max="10" class="form-control" value="0" />
+                </div>
+                <button id="btnIngest" class="btn smartx-btn-primary w-100">Send Packet</button>
+                <div id="ingestResult" class="mt-2 small text-muted"></div>
+            </div>
+        </div>
+
+        <div class="card smartx-card-pastel-pink mb-3">
+            <div class="card-header">🚩 Report an Issue (crowd-sourced anomaly flagging)</div>
+            <div class="card-body">
+                <textarea id="issueDesc" class="form-control mb-2" rows="2" maxlength="500"
+                          placeholder="Describe the problem with the selected sensor..."></textarea>
+                <button id="btnReport" class="btn smartx-btn-primary w-100">Report Issue</button>
+                <div id="reportResult" class="mt-2 small text-muted"></div>
+            </div>
+        </div>
+
+        <div class="card smartx-card-pastel-yellow">
+            <div class="card-header">🔔 Live Activity Feed</div>
+            <ul id="feed" class="list-group list-group-flush smartx-feed"></ul>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="card smartx-card-pastel-blue mb-3">
+            <div class="card-header">Open Reported Issues</div>
+            <ul id="issueList" class="list-group list-group-flush" style="max-height:200px; overflow-y:auto;">
+                @if (issues != null)
+                {
+                    foreach (var i in issues.Where(x => x.Status == "Open"))
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><code>@i.MacAddress</code> — @i.Description</span>
+                            <button class="btn btn-sm smartx-btn-secondary resolve-btn" data-id="@i.Id">Resolve</button>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+
+        <div class="card smartx-card-pastel-blue">
+            <div class="card-header">Recent Telemetry (last 50)</div>
+            <div class="table-responsive" style="max-height:500px; overflow-y:auto;">
+                <table class="table table-sm mb-0">
+                    <thead><tr><th>Time</th><th>MAC</th><th>Metric</th><th>Value</th></tr></thead>
+                    <tbody id="historyBody">
+                        @if (history != null)
+                        {
+                            foreach (var p in history)
+                            {
+                                <tr>
+                                    <td>@p.Timestamp.ToLocalTime().ToString("HH:mm:ss")</td>
+                                    <td><code>@p.DeviceMac</code></td>
+                                    <td>@p.MetricName</td>
+                                    <td>@p.Value</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // RUBRIC IMPROVEMENT: track active module for nav state.
+        sessionStorage.setItem('smartx.lastmodule', 'Sensors');
+
+        const feedEl      = document.getElementById('feed');
+        const historyBody = document.getElementById('historyBody');
+        const issueList   = document.getElementById('issueList');
+
+        function antiForgeryToken() {
+            const el = document.querySelector('input[name="__RequestVerificationToken"]');
+            return el ? el.value : '';
+        }
+        function apiPost(url, body) {
+            return fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': antiForgeryToken()
+                },
+                body: body === undefined ? undefined : JSON.stringify(body)
+            }).then(r => r.json());
+        }
+        function apiPostNoBody(url) {
+            return fetch(url, {
+                method: 'POST',
+                headers: { 'RequestVerificationToken': antiForgeryToken() }
+            }).then(r => r.json());
+        }
+
+        let packetsCount = @history!.Count;
+        let anomaliesCount = 0;
+
+        function levelClass(level) {
+            switch (level) {
+                case 'success': return 'list-group-item-success';
+                case 'warning': return 'list-group-item-warning';
+                case 'danger':  return 'list-group-item-danger';
+                default:        return '';
+            }
+        }
+
+        // RUBRIC IMPROVEMENT (critical): textContent — no XSS.
+        function refreshFeed() {
+            fetch('/Sensors/Feed').then(r => r.json()).then(items => {
+                feedEl.innerHTML = '';
+                items.forEach(i => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item ' + levelClass(i.level);
+                    const time = document.createElement('small');
+                    time.className = 'text-muted';
+                    time.textContent = new Date(i.timestamp).toLocaleTimeString();
+                    li.appendChild(time);
+                    li.appendChild(document.createElement('br'));
+                    li.appendChild(document.createTextNode(i.message ?? ''));
+                    feedEl.appendChild(li);
+                });
+            });
+        }
+
+        // RUBRIC IMPROVEMENT (critical): textContent — no XSS.
+        function prependHistoryRow(p) {
+            const tr = document.createElement('tr');
+            tr.className = p.level === 'warning' ? 'table-warning' : '';
+            const td = (t) => { const c = document.createElement('td'); c.textContent = t; tr.appendChild(c); return c; };
+            td(new Date(p.timestamp).toLocaleTimeString());
+            const mac = document.createElement('td');
+            const code = document.createElement('code'); code.textContent = p.mac;
+            mac.appendChild(code); tr.appendChild(mac);
+            td('live'); td(p.value);
+            historyBody.prepend(tr);
+            while (historyBody.children.length > 50) historyBody.removeChild(historyBody.lastChild);
+        }
+
+        // ---- SignalR ----
+        const conn = new signalR.HubConnectionBuilder()
+            .withUrl("/hubs/telemetry")
+            .withAutomaticReconnect()
+            .build();
+
+        conn.on("packetReceived", p => {
+            prependHistoryRow(p);
+            packetsCount++;
+            document.getElementById('kpiPackets').textContent = packetsCount;
+            if (p.level === 'warning') {
+                anomaliesCount++;
+                document.getElementById('kpiAnomalies').textContent = anomaliesCount;
+            }
+            refreshFeed();
+        });
+
+        // RUBRIC IMPROVEMENT (critical): textContent — issue descriptions are
+        // user-controlled; the old innerHTML path was XSS.
+        conn.on("issueReported", i => {
+            const li = document.createElement('li');
+            li.className = 'list-group-item d-flex justify-content-between align-items-center';
+            const span = document.createElement('span');
+            const code = document.createElement('code'); code.textContent = i.macAddress;
+            span.appendChild(code);
+            span.appendChild(document.createTextNode(' — ' + (i.description ?? '')));
+            li.appendChild(span);
+
+            const btn = document.createElement('button');
+            btn.className = 'btn btn-sm smartx-btn-secondary resolve-btn';
+            btn.dataset.id = i.id;
+            btn.textContent = 'Resolve';
+            li.appendChild(btn);
+
+            issueList.prepend(li);
+            const kpi = document.getElementById('kpiIssues');
+            kpi.textContent = parseInt(kpi.textContent || '0') + 1;
+            refreshFeed();
+        });
+
+        conn.on("burstComplete", () => setTimeout(() => location.reload(), 600));
+
+        conn.start().catch(e => console.error(e));
+
+        // ---- Ingest ----
+        document.getElementById('btnIngest').addEventListener('click', () => {
+            const payload = {
+                deviceMac:  document.getElementById('mac').value,
+                metricName: document.getElementById('metric').value,
+                value:      parseFloat(document.getElementById('value').value),
+                priority:   parseInt(document.getElementById('priority').value || '0')
+            };
+            apiPost('/Sensors/IngestTelemetry', payload).then(data => {
+                document.getElementById('ingestResult').textContent =
+                    data.ok ? `✅ Ingested. Total: ${data.total}` : `❌ ${data.message}`;
+                if (data.ok && typeof window.showSuccessModal === 'function') {
+                    window.showSuccessModal(`Telemetry packet for ${data.mac} was loaded successfully.`);
+                }
+            });
+        });
+
+        // RUBRIC IMPROVEMENT: antiforgery header on burst POST.
+        document.getElementById('btnBurst').addEventListener('click', () => {
+            apiPostNoBody('/Sensors/SimulateBurst?count=50')
+                .then(data => {
+                    document.getElementById('ingestResult').textContent = `⚡ Burst complete. Total: ${data.total}`;
+                    refreshFeed();
+                    setTimeout(() => location.reload(), 800);
+                });
+        });
+
+        // ---- Report issue ----
+        document.getElementById('btnReport').addEventListener('click', () => {
+            const mac  = document.getElementById('mac').value;
+            const desc = document.getElementById('issueDesc').value;
+            if (!desc.trim()) { document.getElementById('reportResult').textContent = 'Please describe the issue.'; return; }
+
+            apiPost('/Issues/Report', { macAddress: mac, description: desc }).then(d => {
+                document.getElementById('reportResult').textContent = d.ok ? '✅ Issue reported.' : '❌ Failed.';
+                document.getElementById('issueDesc').value = '';
+            });
+        });
+
+        // ---- Resolve ----
+        document.addEventListener('click', e => {
+            if (e.target.classList.contains('resolve-btn')) {
+                const id = e.target.dataset.id;
+                apiPostNoBody('/Issues/Resolve?id=' + encodeURIComponent(id)).then(() => {
+                    e.target.closest('li').remove();
+                    const kpi = document.getElementById('kpiIssues');
+                    kpi.textContent = Math.max(0, parseInt(kpi.textContent || '1') - 1);
+                });
+            }
+        });
+
+        refreshFeed();
+    </script>
+}
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

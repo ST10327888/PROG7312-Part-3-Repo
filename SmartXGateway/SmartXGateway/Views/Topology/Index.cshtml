@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Network Topology & Mesh Routing";
+    var sensors = ViewBag.Sensors as List<SmartXGateway.Models.Sensor>;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+    <h2>🕸️ Network Topology & Mesh Routing</h2>
+    <a class="btn smartx-btn-secondary" asp-controller="Home" asp-action="Index">← Back</a>
+</div>
+
+@if (sensors == null || sensors.Count < 2)
+{
+    <div class="alert alert-warning">
+        <strong>Not enough sensors!</strong> You need to register at least 2 sensors in the Sensor Ingestion module to build a mesh network.
+    </div>
+}
+else
+{
+    <div class="row g-3 mb-3">
+        <div class="col-md-6">
+            <div class="card smartx-card-pastel-blue h-100">
+                <div class="card-header">🛣️ Minimum Spanning Tree (MST)</div>
+                <div class="card-body">
+                    <p class="text-muted small">Calculates the most power-efficient routing path using Prim's Algorithm.</p>
+                    <button id="btnMST" class="btn smartx-btn-primary mb-3">Calculate MST</button>
+                    <ul id="mstList" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card smartx-card-pastel-green h-100">
+                <div class="card-header">🔍 BFS Shortest Path</div>
+                <div class="card-body">
+                    <p class="text-muted small">Finds the path with the fewest hops using Breadth-First Search.</p>
+                    <label class="form-label">Start Node</label>
+                    <select id="startMac" class="form-select mb-2">
+                        @foreach (var s in sensors)
+                        {
+                            <option value="@s.MacAddress">@s.MacAddress</option>
+                        }
+                    </select>
+                    <label class="form-label">End Node</label>
+                    <select id="endMac" class="form-select mb-3">
+                        @foreach (var s in sensors)
+                        {
+                            <option value="@s.MacAddress">@s.MacAddress</option>
+                        }
+                    </select>
+                    <button id="btnPath" class="btn smartx-btn-primary w-100 mb-3">Find Shortest Path</button>
+                    <div id="pathResult" class="alert smartx-alert-info d-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card smartx-card-pastel-yellow mb-3">
+        <div class="card-header">🌳 AVL Tree Telemetry Query (O(log n) Range Query)</div>
+        <div class="card-body">
+            <p class="text-muted small">Query historical telemetry using a self-balancing AVL tree based on timestamps.</p>
+            <div class="row g-2 mb-3">
+                <div class="col-md-4">
+                    <label class="form-label">Sensor MAC</label>
+                    <select id="treeMac" class="form-select">
+                        @foreach (var s in sensors)
+                        {
+                            <option value="@s.MacAddress">@s.MacAddress</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">From</label>
+                    <input type="datetime-local" id="treeFrom" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">To</label>
+                    <input type="datetime-local" id="treeTo" class="form-control" />
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button id="btnQueryTree" class="btn smartx-btn-primary w-100">Query</button>
+                </div>
+            </div>
+            <div id="treeResult" class="small text-muted" style="max-height: 200px; overflow-y: auto;"></div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        document.getElementById('btnMST')?.addEventListener('click', async () => {
+            const res = await fetch('/Topology/GetMST');
+            const data = await res.json();
+            const list = document.getElementById('mstList');
+            list.innerHTML = '';
+            if(data.length === 0) {
+                list.innerHTML = '<li class="list-group-item text-danger">Graph is disconnected or too small.</li>';
+                return;
+            }
+            data.forEach(edge => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                const span = document.createElement('span');
+                const c1 = document.createElement('code'); c1.textContent = edge.source;
+                const c2 = document.createElement('code'); c2.textContent = edge.destination;
+                span.appendChild(c1); span.appendChild(document.createTextNode(' ↔ ')); span.appendChild(c2);
+                li.appendChild(span);
+                const badge = document.createElement('span');
+                badge.className = 'badge smartx-badge';
+                badge.textContent = `Cost: ${edge.weight}`;
+                li.appendChild(badge);
+                list.appendChild(li);
+            });
+        });
+
+        document.getElementById('btnPath')?.addEventListener('click', async () => {
+            const start = document.getElementById('startMac').value;
+            const end = document.getElementById('endMac').value;
+            const res = await fetch(`/Topology/FindPath?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}`);
+            const data = await res.json();
+            const resultDiv = document.getElementById('pathResult');
+            resultDiv.classList.remove('d-none');
+
+            if (data.length === 0) {
+                resultDiv.className = 'alert alert-danger';
+                resultDiv.textContent = "❌ No path found (nodes disconnected).";
+            } else {
+                resultDiv.className = 'alert alert-success';
+                resultDiv.textContent = "✅ Path: " + data.join(" → ");
+            }
+        });
+
+        document.getElementById('btnQueryTree')?.addEventListener('click', async () => {
+            const mac = document.getElementById('treeMac').value;
+            const fromInput = document.getElementById('treeFrom').value;
+            const toInput = document.getElementById('treeTo').value;
+
+            if (!fromInput || !toInput) { alert("Please select both dates."); return; }
+
+            // ✅ FIX: Convert local datetime-local strings to UTC ISO strings
+            const fromUtc = new Date(fromInput).toISOString();
+            const toUtc = new Date(toInput).toISOString();
+
+            const res = await fetch(`/Topology/QueryHistory?mac=${encodeURIComponent(mac)}&from=${encodeURIComponent(fromUtc)}&to=${encodeURIComponent(toUtc)}`);
+            const data = await res.json();
+            const resultDiv = document.getElementById('treeResult');
+            resultDiv.innerHTML = '';
+
+            if (data.length === 0) {
+                resultDiv.innerHTML = '<div class="alert alert-warning">No telemetry found in this time range.</div>';
+                return;
+            }
+
+            const ul = document.createElement('ul');
+            ul.className = 'list-group';
+            data.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between';
+                const s1 = document.createElement('span'); s1.textContent = new Date(item.timestamp).toLocaleTimeString();
+                const s2 = document.createElement('strong'); s2.textContent = item.value;
+                li.appendChild(s1); li.appendChild(s2);
+                ul.appendChild(li);
+            });
+            resultDiv.appendChild(ul);
+        });
+    </script>
+}
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

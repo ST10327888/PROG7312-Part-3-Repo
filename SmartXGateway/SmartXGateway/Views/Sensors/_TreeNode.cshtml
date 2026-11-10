@@ -1,0 +1,25 @@
+﻿@model SmartXGateway.Models.DeploymentNode
+<ul class="list-unstyled ms-3">
+    <li>
+        @if (Model.IsConfigured)
+        {
+            <span class="badge smartx-badge-ok">✔</span>
+        }
+        else
+        {
+            <span class="badge smartx-badge-fail">✘</span>
+        }
+        <strong>@Model.Name</strong> <em class="text-muted">(@Model.NodeType)</em>
+        @foreach (var child in Model.Children)
+        {
+            @await Html.PartialAsync("_TreeNode", child)
+        }
+    </li>
+</ul>
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Wentworth, P., 2015. Think Sharply with C#. [Online] Available 
+       at: http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html [Accessed 18 November 2025].
+   ============================================================ *@

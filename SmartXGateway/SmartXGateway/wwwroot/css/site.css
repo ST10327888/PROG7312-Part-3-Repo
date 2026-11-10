@@ -1,0 +1,267 @@
+﻿/* ============================================
+   Smart-X Pastel Theme
+   ============================================ */
+
+:root {
+    --pastel-blue: #cfe5ff;
+    --pastel-green: #d6f0dd;
+    --pastel-pink: #fbdce6;
+    --pastel-yellow: #fff2c8;
+    --pastel-grey: #ececec;
+    --pastel-purple: #e3dcf7;
+    --ink: #2f3542;
+    --ink-muted: #6b7280;
+    --primary-btn: #8ab6f9;
+    --primary-btn-h: #6ea3ec;
+    --secondary-btn: #cfd6e4;
+    --secondary-btn-h: #b8c1d4;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, #fefeff 0%, #f7f9fc 100%);
+}
+
+/* ---------- Navbar ---------- */
+.smartx-navbar {
+    background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-purple));
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+    .smartx-navbar .navbar-brand,
+    .smartx-navbar .nav-link {
+        color: var(--ink) !important;
+        font-weight: 600;
+    }
+
+        .smartx-navbar .nav-link:hover {
+            color: #1a1f2b !important;
+            text-decoration: underline;
+        }
+
+        .smartx-navbar .nav-link.disabled {
+            color: #8a94a6 !important;
+            font-style: italic;
+        }
+
+/* ---------- Footer ---------- */
+.smartx-footer {
+    background: var(--pastel-grey);
+    color: var(--ink-muted);
+    padding: 1.25rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: .9rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    }
+
+.smartx-card-pastel-blue {
+    background: var(--pastel-blue);
+}
+
+.smartx-card-pastel-green {
+    background: var(--pastel-green);
+}
+
+.smartx-card-pastel-pink {
+    background: var(--pastel-pink);
+}
+
+.smartx-card-pastel-yellow {
+    background: var(--pastel-yellow);
+}
+
+/* ✅ FIX: Added the missing purple class used on the Home page */
+.smartx-card-pastel-purple {
+    background: var(--pastel-purple);
+}
+
+.smartx-card-pastel-grey {
+    background: var(--pastel-grey);
+}
+
+.card-header {
+    background: rgba(255,255,255,0.45);
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ---------- KPI Cards ---------- */
+.smartx-kpi {
+    color: var(--ink);
+}
+
+    .smartx-kpi h6 {
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        font-size: .75rem;
+        color: var(--ink-muted);
+    }
+
+    .smartx-kpi h3 {
+        margin: 0;
+        font-weight: 700;
+    }
+
+.smartx-kpi-blue {
+    background: var(--pastel-blue);
+}
+
+.smartx-kpi-green {
+    background: var(--pastel-green);
+}
+
+.smartx-kpi-yellow {
+    background: var(--pastel-yellow);
+}
+
+.smartx-kpi-pink {
+    background: var(--pastel-pink);
+}
+
+/* ---------- Buttons ---------- */
+.smartx-btn-primary {
+    background: var(--primary-btn);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+    .smartx-btn-primary:hover {
+        background: var(--primary-btn-h);
+        color: #fff;
+    }
+
+.smartx-btn-secondary {
+    background: var(--secondary-btn);
+    color: var(--ink);
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+    .smartx-btn-secondary:hover {
+        background: var(--secondary-btn-h);
+        color: var(--ink);
+    }
+
+.smartx-btn-disabled {
+    background: #e5e7eb;
+    color: #9ca3af;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ---------- Badges ---------- */
+.smartx-badge {
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid rgba(0,0,0,.08);
+    padding: .35em .7em;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.smartx-badge-ok {
+    background: #b6e3c0;
+    color: #14532d;
+}
+
+.smartx-badge-fail {
+    background: #f7b6b6;
+    color: #7f1d1d;
+}
+
+/* ---------- Alerts ---------- */
+.smartx-alert-info {
+    background: var(--pastel-blue);
+    border: none;
+    color: var(--ink);
+    border-radius: 12px;
+}
+
+/* ---------- Feed ---------- */
+.smartx-feed {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+    .smartx-feed .list-group-item {
+        font-size: .85rem;
+        background: rgba(255,255,255,.6);
+        border-color: rgba(0,0,0,.05);
+    }
+
+.list-group-item-success {
+    background: #d6f0dd !important;
+}
+
+.list-group-item-warning {
+    background: #fff2c8 !important;
+}
+
+.list-group-item-danger {
+    background: #fbdce6 !important;
+}
+
+/* ---------- Tables ---------- */
+.table thead th {
+    background: rgba(255,255,255,0.55);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    font-weight: 600;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f7ff;
+}
+
+/* ---------- Headings ---------- */
+.smartx-title {
+    background: linear-gradient(90deg, #6ea3ec, #b58cf2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+code {
+    color: #9a3d71;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 768px) {
+    .smartx-navbar .navbar-nav {
+        text-align: left;
+    }
+
+    .smartx-kpi h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Troelsen, A and Japikse, P. 2017. Pro C# 7. With .NET and
+       .NET Core. 8th ed. Apress.
+
+   Peter Wentworth, 2015. Think Sharply with C#. [Online]
+       Available at:
+       http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html
+       [Accessed on 18 November 2025].
+   ============================================================ */

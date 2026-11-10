@@ -1,0 +1,33 @@
+﻿@model SmartXGateway.Models.DeploymentNode
+@{
+    ViewData["Title"] = "Deployment Tree Validation";
+    bool isValid = (bool)ViewBag.IsValid;
+}
+
+<h2>🌳 Recursive Deployment Tree Validation</h2>
+<p class="text-muted">Demonstrates the recursive validation algorithm over a nested Facility → Zone → Sub-Zone → Node hierarchy.</p>
+
+<div class="alert @(isValid ? "alert-success" : "alert-danger")">
+    <strong>Result:</strong> @ViewBag.Result
+</div>
+
+<h4>Tree Structure</h4>
+<div class="card smartx-card-pastel-green">
+    <div class="card-body">
+        @await Html.PartialAsync("_TreeNode", Model)
+    </div>
+</div>
+
+<a class="btn smartx-btn-secondary mt-3" asp-action="Index">← Back</a>
+
+@* ============================================================
+   REFERENCES
+   ------------------------------------------------------------
+   Troelsen, A and Japikse, P. 2017. Pro C# 7. With .NET and
+       .NET Core. 8th ed. Apress.
+
+   Peter Wentworth, 2015. Think Sharply with C#. [Online]
+       Available at:
+       http://www.ict.ru.ac.za/Resources/ThinkSharply/ThinkSharply/index.html
+       [Accessed on 18 November 2025].
+   ============================================================ *@

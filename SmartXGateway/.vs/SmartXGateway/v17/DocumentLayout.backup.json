@@ -1,0 +1,1003 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\hubs\\telemetryhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\hubs\\telemetryhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\controllers\\sensorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\controllers\\sensorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\data\\sensorstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\data\\sensorstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\topology\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\topology\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\commandstream\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\commandstream\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\sensors\\validatetree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\sensors\\validatetree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\sensors\\telemetry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\sensors\\telemetry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\sensors\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\sensors\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\sensors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\sensors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\sensors\\_treenode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\sensors\\_treenode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\timelineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\timelineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\telemetryqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\telemetryqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\predictiveengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\predictiveengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\meshnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\meshnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\fileencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\fileencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\devicelookupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\devicelookupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\devicedictionaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\devicedictionaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\deploymentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\deploymentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\criticalalertpriorityqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\criticalalertpriorityqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\commandstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\commandstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\commandhistorystackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\commandhistorystackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\commanddrainworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\commanddrainworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\services\\activealerthashsetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\services\\activealerthashsetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\userreportedissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\userreportedissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\timelinebucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\timelinebucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\telemetrypacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\telemetrypacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\suggestedaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\suggestedaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\sensorregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\sensorregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\deploymentnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\deploymentnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\commandstreamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\commandstreamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\commandrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\commandrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\avltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\avltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\models\\activityfeeditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\models\\activityfeeditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\data\\sensorcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\data\\sensorcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\controllers\\topologycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\controllers\\topologycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\controllers\\issuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\controllers\\issuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\controllers\\commandstreamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\controllers\\commandstreamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\wwwroot\\js\\nav-state.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\wwwroot\\js\\nav-state.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\wwwroot\\js\\command-stream.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\wwwroot\\js\\command-stream.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|c:\\users\\diyam\\source\\repos\\smartxgateway\\smartxgateway\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B25D8360-2D40-4381-A302-8239F5F47DE8}|SmartXGateway\\SmartXGateway.csproj|solutionrelative:smartxgateway\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "SmartXGateway\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "SmartXGateway\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-24T14:33:52.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\CommandStream\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\CommandStream\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\CommandStream\\Index.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\CommandStream\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-29T19:41:28.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-29T13:38:41.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SensorStore.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Data\\SensorStore.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Data\\SensorStore.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Data\\SensorStore.cs",
+              "RelativeToolTip": "SmartXGateway\\Data\\SensorStore.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:22:26.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SensorsController.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\SensorsController.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Controllers\\SensorsController.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\SensorsController.cs",
+              "RelativeToolTip": "SmartXGateway\\Controllers\\SensorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEABAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:11:42.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelemetryHub.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Hubs\\TelemetryHub.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Hubs\\TelemetryHub.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Hubs\\TelemetryHub.cs",
+              "RelativeToolTip": "SmartXGateway\\Hubs\\TelemetryHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:22:55.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Program.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Program.cs",
+              "RelativeToolTip": "SmartXGateway\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAGMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:35:00.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:09:37.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Topology\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Topology\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Topology\\Index.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Topology\\Index.cshtml",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T10:30:58.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartXGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\appsettings.json",
+              "RelativeToolTip": "SmartXGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-24T14:38:22.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-29T13:38:11.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:09:17.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-29T13:40:37.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ValidateTree.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\ValidateTree.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Sensors\\ValidateTree.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\ValidateTree.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Sensors\\ValidateTree.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:31:02.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Telemetry.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\Telemetry.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Sensors\\Telemetry.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\Telemetry.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Sensors\\Telemetry.cshtml",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAAACABAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:28:16.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\Register.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Sensors\\Register.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\Register.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Sensors\\Register.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:27:40.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Sensors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\Index.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Sensors\\Index.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAI4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:25:20.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_TreeNode.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\_TreeNode.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Sensors\\_TreeNode.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Sensors\\_TreeNode.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Sensors\\_TreeNode.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:31:32.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-29T12:46:36.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:12:36.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:23:07.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "SmartXGateway\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "SmartXGateway\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-24T14:16:00.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TimelineService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\TimelineService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\TimelineService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\TimelineService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\TimelineService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAuwEkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:37:17.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TelemetryQueueService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\TelemetryQueueService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\TelemetryQueueService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\TelemetryQueueService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\TelemetryQueueService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:51:10.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PredictiveEngineService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\PredictiveEngineService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\PredictiveEngineService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\PredictiveEngineService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\PredictiveEngineService.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAiwOYAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:37:28.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MeshNetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\MeshNetworkService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\MeshNetworkService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\MeshNetworkService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\MeshNetworkService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAuwH0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T10:16:50.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FileEncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\FileEncryptionService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\FileEncryptionService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\FileEncryptionService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\FileEncryptionService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwCUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:34:29.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeviceLookupService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\DeviceLookupService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\DeviceLookupService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\DeviceLookupService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\DeviceLookupService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:36:47.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DeviceDictionaryService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\DeviceDictionaryService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\DeviceDictionaryService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\DeviceDictionaryService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\DeviceDictionaryService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAqwEcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:53:24.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DeploymentValidator.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\DeploymentValidator.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\DeploymentValidator.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\DeploymentValidator.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\DeploymentValidator.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAC4AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:34:15.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CriticalAlertPriorityQueueService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CriticalAlertPriorityQueueService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\CriticalAlertPriorityQueueService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CriticalAlertPriorityQueueService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\CriticalAlertPriorityQueueService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:50:30.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CommandStreamService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CommandStreamService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\CommandStreamService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CommandStreamService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\CommandStreamService.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAmwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:37:03.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CommandHistoryStackService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CommandHistoryStackService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\CommandHistoryStackService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CommandHistoryStackService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\CommandHistoryStackService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:49:54.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CommandDrainWorker.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CommandDrainWorker.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\CommandDrainWorker.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\CommandDrainWorker.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\CommandDrainWorker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:49:25.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ActiveAlertHashSetService.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\ActiveAlertHashSetService.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Services\\ActiveAlertHashSetService.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Services\\ActiveAlertHashSetService.cs",
+              "RelativeToolTip": "SmartXGateway\\Services\\ActiveAlertHashSetService.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAmwIUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:48:53.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserReportedIssue.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\UserReportedIssue.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\UserReportedIssue.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\UserReportedIssue.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\UserReportedIssue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:27:22.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TimeLineBucket.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\TimeLineBucket.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\TimeLineBucket.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\TimeLineBucket.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\TimeLineBucket.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA2wBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:54:11.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "TelemetryPacket.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\TelemetryPacket.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\TelemetryPacket.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\TelemetryPacket.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\TelemetryPacket.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:24:29.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SuggestedAction.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\SuggestedAction.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\SuggestedAction.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\SuggestedAction.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\SuggestedAction.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA/wBIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:33:49.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SensorRegistrationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\SensorRegistrationViewModel.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\SensorRegistrationViewModel.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\SensorRegistrationViewModel.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\SensorRegistrationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:27:56.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Sensor.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\Sensor.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\Sensor.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\Sensor.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\Sensor.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAADwvzQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:24:47.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:28:16.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:28:32.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T12:44:32.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DeviceState.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\DeviceState.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\DeviceState.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\DeviceState.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\DeviceState.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:33:37.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DeploymentNode.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\DeploymentNode.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\DeploymentNode.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\DeploymentNode.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\DeploymentNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:25:05.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CommandStreamViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\CommandStreamViewModel.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\CommandStreamViewModel.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\CommandStreamViewModel.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\CommandStreamViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:34:02.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CommandRecord.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\CommandRecord.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\CommandRecord.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\CommandRecord.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\CommandRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:33:22.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AvlTree.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\AvlTree.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\AvlTree.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\AvlTree.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\AvlTree.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T10:11:25.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ActivityFeedItem.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\ActivityFeedItem.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Models\\ActivityFeedItem.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Models\\ActivityFeedItem.cs",
+              "RelativeToolTip": "SmartXGateway\\Models\\ActivityFeedItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:27:37.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "SensorCollection.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Data\\SensorCollection.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Data\\SensorCollection.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Data\\SensorCollection.cs",
+              "RelativeToolTip": "SmartXGateway\\Data\\SensorCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:22:13.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SmartXGateway\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:14:51.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "TopologyController.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\TopologyController.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Controllers\\TopologyController.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\TopologyController.cs",
+              "RelativeToolTip": "SmartXGateway\\Controllers\\TopologyController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwD8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T10:23:55.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IssuesController.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\IssuesController.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Controllers\\IssuesController.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\IssuesController.cs",
+              "RelativeToolTip": "SmartXGateway\\Controllers\\IssuesController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAuwIgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:14:11.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SmartXGateway\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T14:04:49.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CommandStreamController.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\CommandStreamController.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Controllers\\CommandStreamController.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\CommandStreamController.cs",
+              "RelativeToolTip": "SmartXGateway\\Controllers\\CommandStreamController.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAiwAsBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:32:49.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "SmartXGateway\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "SmartXGateway\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwD0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T13:12:18.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "SmartXGateway\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "SmartXGateway\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-11-04T19:21:15.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "nav-state.js",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\js\\nav-state.js",
+              "RelativeDocumentMoniker": "SmartXGateway\\wwwroot\\js\\nav-state.js",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\js\\nav-state.js",
+              "RelativeToolTip": "SmartXGateway\\wwwroot\\js\\nav-state.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-11-04T19:50:31.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "command-stream.js",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\js\\command-stream.js",
+              "RelativeDocumentMoniker": "SmartXGateway\\wwwroot\\js\\command-stream.js",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\wwwroot\\js\\command-stream.js",
+              "RelativeToolTip": "SmartXGateway\\wwwroot\\js\\command-stream.js",
+              "ViewState": "AgIAADUBAAAAAAAAAAAAAEUBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-30T10:32:17.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SmartXGateway\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\diyam\\source\\repos\\SmartXGateway\\SmartXGateway\\appsettings.Development.json",
+              "RelativeToolTip": "SmartXGateway\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-29T13:42:17.294Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
